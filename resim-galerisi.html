@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Resim Galerisi Hakan Aydoğdu</title>
+    <style>
+        body { text-align: center;background-color: aqua;}
+        #galeri {width: 620px;margin:auto;}
+        img {margin-right:10px;margin-top:10px;}
+        img:nth-child(3n) {margin-right:0px;} 
+   </style>
+  </head>
+<body>
+    <h1>- RESİM GALERİSİ -</h1>
+    <div id="galeri"></div>
+    <script>
+        var div = document.getElementById("galeri")
+        for(i=1;i<=12;i++){
+            var img = document.createElement("img");
+            img.src = 'https://source.unsplash.com/random/200x200?sig='+i;
+            div.appendChild(img)
+        }
+        
+    </script>
+  </body>
+</html>
